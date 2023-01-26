@@ -45,8 +45,9 @@ const Loading = ({ batch, resetMint }) => {
       <h2 className="text-3xl font-bold">Trait Batch</h2>
         <div class="flex flex-row">
           {batch.map((x) => (
-            <a href={`https://testnets.opensea.io/assets/goerli/0x0a0BaB951Bc81367376c61caF2476459f9C8e9F9/${x}`}
+            <a key={x} href={`https://testnets.opensea.io/assets/goerli/0x0a0BaB951Bc81367376c61caF2476459f9C8e9F9/${x}`}
               target="_blank"
+              rel="noreferrer"
               className=" text-center"
               >
               <div className="flex flex-col">
