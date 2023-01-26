@@ -13,6 +13,7 @@ import MintComplete from "../components/MintComplete";
 
 import { useContractEvent } from "wagmi";
 import ContractInterfaceTraits from "../NFTraits.json";
+import { BigNumber } from "@ethersproject/bignumber";
 
 const Home: NextPage = () => {
   const [mintType, setMintType] = React.useState("main");
@@ -33,7 +34,7 @@ const Home: NextPage = () => {
       console.log("MintRequestFulfilled", node, label, owner);
 
       const incomingId = node[0].toString();
-      const incomingBatch = node[1].map((x) => x.toNumber());
+      const incomingBatch = node[1].map((x: BigNumber) => x.toNumber());
 
       if (incomingId === requestIdPending) {
         setMintedbatch(incomingBatch);
