@@ -1,0 +1,36 @@
+{
+  "name": "traits-mvp",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "pretty": "npx prettier --write ."
+  },
+  "dependencies": {
+    "@next/font": "^13.1.5",
+    "@rainbow-me/rainbowkit": "^0.6.2",
+    "@supabase/supabase-js": "^2.0.0",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.0.0",
+    "next": "^13.1.5",
+    "react": "^18.2.0",
+    "react-custom-events": "^1.1.1",
+    "react-dom": "^18.2.0",
+    "wagmi": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "@types/react": "^18.0.9",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.15.0",
+    "eslint-config-next": "^13.1.5",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.3",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.7.2"
+  }
+}
